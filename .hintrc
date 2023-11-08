@@ -31,6 +31,20 @@
       {
         "html-has-lang": "off"
       }
-    ]
-  }
+    ],
+    "compat-api/css": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 116",
+    "not and_ff <= 116",
+    "not chrome <= 117",
+    "not edge <= 116",
+    "not firefox <= 117",
+    "not ios_saf <= 16.6",
+    "not opera <= 102",
+    "not safari <= 16.6",
+    "not samsung <= 22"
+  ]
 }
