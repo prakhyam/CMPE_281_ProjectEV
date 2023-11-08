@@ -1,0 +1,72 @@
+<div class="main-content" style="background-color: #333;color:white;">
+    <div class="container-fluid">
+        <div class="row" style="background-color: #333;color:white;">
+            <div class="col-md-6" style="float: left; width: 50%; color: black;">
+                <div class="card postal-card" >
+                <div class="stamp"></div>  
+               
+                <lbd-chart
+                  [title]="'EV Station Statistics'"
+                  [subtitle]="'EV Performance'"
+                  [chartClass]="'ct-perfect-fourth'"
+                  [chartType]="emailChartType"
+                  [chartData]="emailChartData"
+                  [legendItems]="emailChartLegendItems"
+                  [withHr]="true"
+                  [footerIconClass]="'fa fa-clock-o'"
+                  [footerText]="'Campaign sent 2 days ago'">
+                </lbd-chart>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"style="float: left; width: 50%; color: black;">
+                    <lbd-chart
+                      [title]="'EV Station Statistics'"
+                      [subtitle]="'EV Availability'"
+                      [chartType]="activityChartType"
+                      [chartData]="activityChartData"
+                      [chartOptions]="activityChartOptions"
+                      [chartResponsive]="activityChartResponsive"
+                      [legendItems]="activityChartLegendItems"
+                      [withHr]="true"
+                      [footerIconClass]="'fa fa-check'"
+                      >
+                    </lbd-chart>
+                </div>
+            <!-- [legendItems]="activityChartLegendItems"-->
+        </div>
+        
+            <div class="col-md-6" style="width: 100%; height: 100vh;">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <div class="header">
+                        <h4 class="title">Recent EV Station Bookings</h4>
+                        <p class="category"></p>
+                    </div>
+                    <div class="content">
+                        <div class="table-full-width">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>Recent Bookings</td>
+                                        <td class="td-actions text-right">
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="fa fa-history"></i> Updated 3 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

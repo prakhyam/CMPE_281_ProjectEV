@@ -1,0 +1,23 @@
+.card.postal-card{
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    color: black; 
+  }
+  .stamp {
+    width: 50px;
+    height: 50px;
+      
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .header {
+    
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
